@@ -1,0 +1,228 @@
+{
+  "name": "Sec7",
+  "type": "FRAME",
+  "color": {
+    "r": 1,
+    "g": 1,
+    "b": 1,
+    "a": 1
+  },
+  "children": [
+    {
+      "name": "Rectangle 8",
+      "type": "RECTANGLE",
+      "color": {
+        "r": 0.21176470816135406,
+        "g": 0.29019609093666077,
+        "b": 0.2078431397676468,
+        "a": 1
+      }
+    },
+    {
+      "name": "Frame 17",
+      "type": "FRAME",
+      "children": [
+        {
+          "name": "Rectangle 5",
+          "type": "RECTANGLE"
+        },
+        {
+          "name": "Frame 2",
+          "type": "FRAME",
+          "children": [
+            {
+              "name": "Agende uma consulta comigo",
+              "type": "TEXT",
+              "text": "Agende uma consulta comigo",
+              "color": {
+                "r": 1,
+                "g": 1,
+                "b": 1,
+                "a": 1
+              },
+              "fontSize": 36,
+              "fontWeight": 400
+            },
+            {
+              "name": "Group 34",
+              "type": "GROUP",
+              "children": [
+                {
+                  "name": "Label → Seu nome completo",
+                  "type": "TEXT",
+                  "text": "Seu nome",
+                  "color": {
+                    "r": 0.9736910462379456,
+                    "g": 0.9736913442611694,
+                    "b": 0.9736911654472351,
+                    "a": 1
+                  },
+                  "fontSize": 14,
+                  "fontWeight": 500
+                },
+                {
+                  "name": "Input",
+                  "type": "FRAME",
+                  "color": {
+                    "r": 0.9849947690963745,
+                    "g": 0.9849947690963745,
+                    "b": 0.9849947690963745,
+                    "a": 1
+                  },
+                  "children": [
+                    {
+                      "name": "Container",
+                      "type": "FRAME",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Group 35",
+              "type": "GROUP",
+              "children": [
+                {
+                  "name": "Label → Seu nome completo",
+                  "type": "TEXT",
+                  "text": "Seu whatsapp",
+                  "color": {
+                    "r": 0.9736910462379456,
+                    "g": 0.9736913442611694,
+                    "b": 0.9736911654472351,
+                    "a": 1
+                  },
+                  "fontSize": 14,
+                  "fontWeight": 500
+                },
+                {
+                  "name": "Input",
+                  "type": "FRAME",
+                  "color": {
+                    "r": 0.9849947690963745,
+                    "g": 0.9849947690963745,
+                    "b": 0.9849947690963745,
+                    "a": 1
+                  },
+                  "children": [
+                    {
+                      "name": "Container",
+                      "type": "FRAME",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Group 36",
+              "type": "GROUP",
+              "children": [
+                {
+                  "name": "Label → Seu nome completo",
+                  "type": "TEXT",
+                  "text": "Qual o tratamento?",
+                  "color": {
+                    "r": 0.9736910462379456,
+                    "g": 0.9736913442611694,
+                    "b": 0.9736911654472351,
+                    "a": 1
+                  },
+                  "fontSize": 14,
+                  "fontWeight": 500
+                },
+                {
+                  "name": "Input",
+                  "type": "FRAME",
+                  "color": {
+                    "r": 0.9849947690963745,
+                    "g": 0.9849947690963745,
+                    "b": 0.9849947690963745,
+                    "a": 1
+                  },
+                  "children": [
+                    {
+                      "name": "Container",
+                      "type": "FRAME",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "button",
+              "type": "INSTANCE",
+              "children": [
+                {
+                  "name": "icon / jam-icons / outline & logos / plus",
+                  "type": "INSTANCE",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "children": [
+                    {
+                      "name": "Vector",
+                      "type": "VECTOR",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Text Container",
+                  "type": "FRAME",
+                  "children": [
+                    {
+                      "name": "Button Text",
+                      "type": "TEXT",
+                      "text": "Conheça nossa clínica",
+                      "color": {
+                        "r": 1,
+                        "g": 0.9921568632125854,
+                        "b": 0.9686274528503418,
+                        "a": 1
+                      },
+                      "fontSize": 20,
+                      "fontWeight": 500
+                    }
+                  ]
+                },
+                {
+                  "name": "icon / jam-icons / outline & logos / arrow-right",
+                  "type": "INSTANCE",
+                  "color": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "children": [
+                    {
+                      "name": "Vector",
+                      "type": "VECTOR",
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
