@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumores de pele | Dr. Guilherme Cunha</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .spec-hero {
+            position: relative;
+            min-height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: #000000;
+            padding-top: 100px;
+            padding-bottom: 40px;
+        }
+        .spec-content-section {
+            background: #FFFFFF;
+            color: #333333;
+            padding: 80px 0;
+        }
+        .spec-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            align-items: flex-start;
+        }
+        .spec-image-card {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .spec-image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+        .spec-text-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .spec-text-column p {
+            font-family: 'Jost', sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #5D5D5D;
+            font-weight: 300;
+            margin: 0;
+        }
+        .spec-form-section {
+            background: #FFFFFF;
+            padding: 40px 0 80px 0;
+        }
+        .spec-form-container {
+            background: #2E4436;
+            border-radius: 20px;
+            padding: clamp(30px, 5vw, 60px);
+            color: #FFFFFF;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 40px;
+            align-items: center;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        .spec-form-left {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            z-index: 2;
+        }
+        .spec-form-left h2 {
+            font-family: var(--font-serif);
+            font-size: clamp(2rem, 3.5vw, 2.75rem);
+            font-weight: 400;
+            color: #FFFFFF;
+            margin: 0;
+        }
+        .spec-form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .spec-form-group label {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: rgba(255,255,255,0.8);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .spec-form-group input {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            height: 50px;
+            padding: 0 16px;
+            color: #FFFFFF;
+            font-family: 'Jost', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, background 0.3s ease;
+        }
+        .spec-form-group input:focus {
+            outline: none;
+            border-color: var(--gold);
+            background: rgba(255, 255, 255, 0.12);
+        }
+        .spec-form-btn {
+            background: var(--gold);
+            color: #120D0A;
+            border: none;
+            border-radius: 8px;
+            height: 56px;
+            font-family: 'Jost', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease, transform 0.2s ease;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+        .spec-form-btn:hover {
+            background: var(--gold-hover);
+            transform: translateY(-2px);
+        }
+        .spec-form-right {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: 380px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .spec-form-dr-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        @media (max-width: 991px) {
+            .spec-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .spec-form-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .spec-form-right {
+                min-height: 300px;
+                order: -1;
+            }
+            .spec-form-dr-img {
+                position: relative;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body class="home-body">
+
+<!-- HEADER: Menu Pílula -->
+<header id="pill-header">
+    <nav class="pill-nav">
+        <a href="index.html#inicio" class="nav-item">Início</a>
+        <a href="sobre.html" class="nav-item">Dr. Guilherme Cunha</a>
+        <a href="procedimentos.html" class="nav-item">Procedimentos</a>
+        <a href="index.html#clinica" class="nav-item">A Clínica</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="spec-hero">
+    <div class="container">
+        <h1 class="title-primary" style="margin-bottom: 0; color: var(--gold);">Tumores de pele</h1>
+    </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="spec-content-section">
+    <div class="container">
+        <div class="spec-grid">
+            <div class="spec-image-card">
+                <img src="assets/proc_tumores_de_pele_e_pequenos_retalhos.png" alt="Tumores de pele">
+            </div>
+            <div class="spec-text-column">
+                <p>A cirurgia de tumores de pele envolve a remoção completa de lesões tumorais (benignas ou malignas) da pele, seguida da reconstrução estética da área afetada. Em lesões maiores ou localizadas em áreas nobres como a face, a sutura simples pode não ser suficiente, exigindo técnicas reconstrutivas.</p>
+<p>A utilização de pequenos retalhos (reposicionamento de pele saudável vizinha) ou enxertos permite cobrir a ferida cirúrgica de forma a preservar ao máximo a função e a harmonia estética da região. O planejamento cirúrgico é feito com foco na segurança oncológica (margens livres) e na discrição das cicatrizes.</p>
+<p>Trata-se de um procedimento de alta responsabilidade que exige precisão técnica e conhecimento anatômico a fim de entregar os melhores resultados funcionais e estéticos possíveis.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FORM SECTION -->
+<section class="spec-form-section">
+    <div class="container">
+        <div class="spec-form-container">
+            <div class="spec-form-left">
+                <h2>Agende uma consulta comigo</h2>
+                <form action="https://wa.me/5561999999999" method="GET" target="_blank" class="spec-form-left" style="gap: 20px; width: 100%;">
+                    <div class="spec-form-group">
+                        <label for="name">Seu nome</label>
+                        <input type="text" id="name" name="text_name" placeholder="Insira seu nome completo" required>
+                    </div>
+                    <div class="spec-form-group">
+                        <label for="whatsapp">Seu whatsapp</label>
+                        <input type="tel" id="whatsapp" name="text_tel" placeholder="(00) 00000-0000" required>
+                    </div>
+                    <div class="spec-form-group">
+                        <label for="treatment">Qual o tratamento?</label>
+                        <input type="text" id="treatment" name="text_treatment" value="Tumores de pele" readonly>
+                    </div>
+                    <button type="submit" class="spec-form-btn">Conheça nossa clínica</button>
+                </form>
+            </div>
+            <div class="spec-form-right">
+                <img src="assets/dr_terno.jpg" alt="Dr. Guilherme Cunha" class="spec-form-dr-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="home-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-links">
+                <a href="sobre.html">Dr Guilherme Cunha</a>
+                <a href="procedimentos.html">Procedimentos</a>
+                <a href="index.html#clinica">A Clínica</a>
+            </div>
+            <div class="footer-logo-area">
+                <img src="assets/logo_novo.png" alt="Logo">
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="YouTube"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.163a3.003 3.003 0 00-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.507a3.003 3.003 0 00-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 002.11 2.11c1.87.507 9.388.507 9.388.507s7.518 0 9.388-.507a3.003 3.003 0 002.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+                <a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/></svg></a>
+                <a href="#" aria-label="Twitter"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                <a href="#" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                <a href="#" aria-label="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            Guilherme Cunha @ 2026. Todos os direitos reservados
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

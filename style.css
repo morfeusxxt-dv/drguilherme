@@ -1147,8 +1147,6 @@ body.home-body { background: var(--bg-black); color: var(--text-white); }
     height: auto;
     aspect-ratio: 423/541;
     object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 .collage-btn {
     position: static;
