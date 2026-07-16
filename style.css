@@ -1191,6 +1191,10 @@ body.home-body { background: var(--bg-black); color: var(--text-white); }
     justify-content: space-between;
 }
 .video-card {
+    display: block;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
     width: 100%;
     max-width: 304px;
     height: auto;
