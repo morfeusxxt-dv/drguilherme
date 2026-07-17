@@ -176,4 +176,38 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         requestAnimationFrame(animate);
     }
+
+    // 6. Contact Form redirection to WhatsApp
+    const mainForm = document.getElementById("main-contact-form");
+    if (mainForm) {
+        mainForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const name = document.getElementById("contact-name").value;
+            const phone = document.getElementById("contact-phone").value;
+            const treatment = document.getElementById("contact-treatment").value;
+            
+            const message = `Olá Dr. Guilherme Cunha, gostaria de agendar uma consulta.\n\n*Nome:* ${name}\n*WhatsApp:* ${phone}\n*Procedimento:* ${treatment}`;
+            const whatsappUrl = `https://wa.me/556192648788?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, "_blank");
+        });
+    }
+
+    const specForms = document.querySelectorAll(".spec-form-left form");
+    specForms.forEach(form => {
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const nameInput = form.querySelector('input[name="text_name"]');
+            const phoneInput = form.querySelector('input[name="text_tel"]');
+            const treatmentInput = form.querySelector('input[name="text_treatment"]');
+            
+            const name = nameInput ? nameInput.value : "";
+            const phone = phoneInput ? phoneInput.value : "";
+            const treatment = treatmentInput ? treatmentInput.value : "";
+            
+            const message = `Olá Dr. Guilherme Cunha, gostaria de agendar uma consulta.\n\n*Nome:* ${name}\n*WhatsApp:* ${phone}\n*Procedimento:* ${treatment}`;
+            const whatsappUrl = `https://wa.me/556192648788?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, "_blank");
+        });
+    });
 });
+

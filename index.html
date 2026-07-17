@@ -41,7 +41,7 @@
                 Redefina a sua beleza e contornos com um profissional qualificado. Faça o investimento mais benéfico de sua vida, invista em você!
             </p>
             <div class="hero-buttons">
-                <a href="https://wa.me/5561999999999" class="btn-solid-gold">Agende uma consulta</a>
+                <a href="https://wa.me/556192648788" class="btn-solid-gold">Agende uma consulta</a>
                 <a href="procedimentos.html" class="btn-outline-gold">Conheça os procedimentos</a>
             </div>
             <div class="google-rating">
@@ -170,7 +170,7 @@
             <h2 class="title-primary"><span class="serif-italic">Unna Vitta</span>: Tudo para o seu conforto</h2>
             <p>Fundada há mais de 5 anos, foi construída a partir da idealização e do sonho do casal de médicos Lauriene Pereira e Guilherme Cunha.</p>
             <p>Atuando com excelência em Cirurgia Plástica e Ginecologia Regenerativa, contando com os melhores e mais modernos tratamentos.</p>
-            <a href="https://wa.me/5561999999999" class="btn-solid-gold">Conheça nossa clínica</a>
+            <a href="https://wa.me/556192648788" class="btn-solid-gold">Conheça nossa clínica</a>
         </div>
         <div class="clinica-image-wrapper">
             <img src="assets/figma_guilherme_cunha_-_home_-_desktop_img_14.png" alt="Clínica Unna Vitta">
@@ -192,20 +192,20 @@
         <div class="contact-form-area">
             <h2>Agende uma<br>consulta comigo</h2>
             
-            <form class="contact-form">
+            <form class="contact-form" id="main-contact-form">
                 <div class="form-group">
-                    <label>Seu nome</label>
-                    <input type="text" placeholder="Digite seu nome completo">
+                    <label for="contact-name">Seu nome</label>
+                    <input type="text" id="contact-name" placeholder="Digite seu nome completo" required>
                 </div>
                 <div class="form-group">
-                    <label>Seu WhatsApp</label>
-                    <input type="tel" placeholder="(00) 99999-9999">
+                    <label for="contact-phone">Seu WhatsApp</label>
+                    <input type="tel" id="contact-phone" placeholder="(00) 99999-9999" required>
                 </div>
                 <div class="form-group">
-                    <label>Qual o tratamento de interesse?</label>
-                    <input type="text" placeholder="Ex: Mamoplastia, Lipoaspiração">
+                    <label for="contact-treatment">Qual o tratamento de interesse?</label>
+                    <input type="text" id="contact-treatment" placeholder="Ex: Mamoplastia, Lipoaspiração" required>
                 </div>
-                <button type="button" class="btn-submit-contact">
+                <button type="submit" class="btn-submit-contact">
                     Agendar consulta
                 </button>
             </form>
@@ -238,5 +238,6 @@
     </div>
 </footer>
 
+<script src="script.js" defer></script>
 </body>
 </html>
